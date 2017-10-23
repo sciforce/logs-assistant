@@ -1,0 +1,35 @@
+{
+  "greeting": {
+    "examples": ["hello", "hi"],
+    "responses": {"ok": "Hi there!", "duplicate": "No need to repeat."}
+  },
+  "clear": {
+    "examples": ["cancel", "stop", "let's start again", "reset", "clear"],
+    "responses": {"ok": "Ok, sure."}
+  },
+  "last_errors": {
+    "examples": ["get last error", "show recent errors", "find problems", "what happened?", "list problems"],
+    "responses": {"ok": "I detected {:d} problems.", "blank": "Good news! No errors found."}
+  },
+  "time_slice": {
+    "examples": ["show log entries between _DATE and _DATE", "get log for _DATE"],
+    "responses": {"ok": "Found {:d} records for given dates.", "blank": "Apparently nothing happened at that time."}
+  },
+  "service_filter": {
+    "examples": ["check _SERVICE service", "what _SERVICE service showed at that time?",
+                 "show _SERVICE logs", "display _SERVICE log"],
+    "responses": {"ok": "Found {:d} records for given service.", "blank": "Sorry, no results."}
+  },
+  "head": {
+    "examples": ["head", "show first lines", "print _NUM lines"],
+    "responses": {"blank": "Results are headless."}
+  },
+  "tail": {
+    "examples": ["tail", "show last lines", "print _NUM final lines", "and what were last _NUM"],
+    "responses": {"blank": "Nothing to show."}
+  },
+  "show_all": {
+    "examples": ["print all", "go on", "show results"],
+    "responses": {"blank": "Blank results."}
+  }
+}
